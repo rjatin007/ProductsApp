@@ -3,7 +3,7 @@ const initialState = {
   products:[],
   totalCount:0,
 }
-const rootReducer = (state = {}, action) => {
+const rootReducer = (state = intialState, action) => {
   switch(action.type){
     case action_constants.FECTH_DATA:
       return {
