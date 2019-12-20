@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import styled from 'styled-components';
-import {getData} from '../store/Data';
 import ListProducts from './ListProducts';
 const AppContainer =styled('div')`
   text-align:center;
