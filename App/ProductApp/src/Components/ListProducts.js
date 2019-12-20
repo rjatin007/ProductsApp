@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const ProductsContainer = styled.div`
@@ -77,11 +77,10 @@ const ListProducts = ({ products , showMore, totalCount}) => {
         products.length > 0 &&
         products.map(product => (
           <Product>
-            <ProductImage src={product.image}/>
-            {/* <ProductImage src='https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg'/> */}
-            <ProductDetailsContainer>
-              <Text type="title">{product.title}</Text>
-              <Text type="price">{product.price}</Text>
+             {/* <ProductImage src={product.image? product.image:''}/> */}
+             <ProductImage src='https://www.brandchannel.com/wp-content/uploads/2018/11/unilever-baby-dove-personalized.jpg'/> 
+              <Text type="title">{product.title ? product.title : ''}</Text>
+              <Text type="price">{product.price ? product.price : ''}</Text>
             </ProductDetailsContainer>
           </Product>
         ))}
